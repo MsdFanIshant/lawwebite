@@ -1,0 +1,536 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.topnav a:hover {
+
+    color: darkgrey;
+}
+
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+.noemp{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Boogaloo', cursive;
+    color: gold;
+}
+.clpara{
+    font-size: 40px;
+    text-align: center;
+    color: slategrey;
+    font-family: 'Boogaloo', cursive;
+    font-weight: bolder;
+}
+.contact{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: 'Boogaloo', cursive;
+    background-color: black;
+
+}
+#h1{
+    text-align: center;
+    font-size: 100px;
+    font-family: Algerian;
+    margin-top: 100px;
+    animation-name: heading;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    color: goldenrod;
+}
+
+.main{
+    z-index: 3;
+    background-color: blueviolet;
+    text-align: center;
+    font-size: 30px;
+    animation-name: mainanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: fixed;
+    top: 550px;
+    width: 100%;
+    font-family: 'Boogaloo', cursive;
+}
+@keyframes mainanimation {
+    25%{
+        color: red;
+    }
+    50%{
+        color: white;
+    }
+    75%{
+        color: black;
+    }
+    100%{
+        color: gold;
+    }
+}
+.info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: go
+    height: 600px;
+    width: 400px;
+}
+
+.infopara {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Boogaloo', cursive;
+    animation-name: mainpoints;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mainpoints {
+    0%   { color: black;
+        transform: scale(1);
+    }
+    20%  {color: blueviolet;
+        transform: scale(1.2);
+    }
+    100% {color: blue;
+        transform: scale(1);
+    }
+}
+
+
+
+.lawimg:hover{
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.lawimg{
+    height=400px;
+    width=100%;
+    border-radius: 50px;
+}
+
+
+
+@media (min-width: 1366px) {
+
+    .quotepara {
+        text-align: center;
+        font-family: 'Boogaloo', cursive;
+        font-size: 30px;
+        color: red;
+        animation-name: quoteanimate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+    }
+
+    .quote:hover {
+        opacity: 0.7;
+        transition: 0.5s ease;
+    }
+
+    .quotepara {
+        opacity: 0;
+    }
+
+    .quote:hover .quotepara {
+        opacity: 1;
+        transition: 0.5s;
+        font-size: 40px;
+        font-family: 'Boogaloo', cursive;}
+
+
+    }
+
+
+@media (max-width: 1360px)
+{
+    .main{
+        z-index: 3;
+        background-color: blueviolet;
+        text-align: center;
+        font-size: 30px;
+        animation-name: mainanimation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: fixed;
+        top: 560px;
+        width: 100%;
+    }
+    .quotepara{
+        font-size: 30px;
+        font-family: 'Boogaloo', cursive;
+    }
+}
+.carousel:hover{
+    background-color: blueviolet;
+    transition: 1s;
+}
+.clients{
+    background-color: gainsboro;
+    height: 100px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 35px;
+    animation-name: clientsanimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes clientsanimation {
+    0%{
+        color: black;
+    }
+    50%{
+        color: purple;
+    }
+    100%{
+        color: mediumblue;
+    }
+}
+
+.prac{
+    width: 100%;
+    margin-top: 50px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.prc{
+    height: 300px;
+    width: 400px;
+    margin: 5px;
+}
+
+@media  (min-width: 1400px) {
+
+
+    .prachidden{
+        opacity: 1;
+        color: white;
+        font-family: 'Boogaloo', cursive;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10px;
+
+    }
+    .prc:hover {
+        opacity: 0.6;
+        transition: 1s ease-in;
+
+    }
+
+    /*.prachidden {
+        opacity: 0;
+    }*/
+
+    .prc:hover .prachidden {
+        opacity: 1;
+        transition: 0.5s ease;
+        text-align: center;
+        font-family: 'Boogaloo', cursive;
+        font-size: 30px;
+        margin-top: 10px;
+        color: white;
+        background-color: blueviolet;
+    }
+
+}
+
+
+@media  (max-width: 1390px){
+
+    .prc{
+        width: 500px;
+        margin: 10px;
+        opacity: 0.8
+    }
+    .prachidden{
+        opacity: 1;
+        color: white;
+        text-align: center;
+        font-family: 'Boogaloo', cursive;
+        font-size: 30px;
+        margin-top: 10px;
+
+    }
+    .prc:hover {
+        opacity: 0.6;
+        transition: 1s ease-in;
+
+    }
+
+
+
+    .prc:hover .prachidden {
+        opacity: 1;
+        transition: 0.5s ease;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Boogaloo', cursive;
+        margin-top: 10px;
+        color: white;
+        background-color: blueviolet;
+    }
+
+
+}
+
+@media (max-width: 1060px) {
+    .main{
+        z-index: 3;
+        background-color: blueviolet;
+        text-align: center;
+        font-size: 20px;
+        animation-name: mainanimation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: fixed;
+        top: 500px;
+        width: 100%;
+    }
+
+
+    .prc{
+        width: 700px;
+        margin-left: 80px;
+        opacity: 0.7;
+    }
+    .prachidden{
+        opacity: 1;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Boogaloo', cursive;
+        margin-top: 10px;
+
+    }
+    .prc:hover {
+        opacity: 0.6;
+        transition: 1s ease-in;
+
+    }
+
+
+
+    .prc:hover .prachidden {
+        opacity: 1;
+        transition: 0.5s ease;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        color: white;
+        font-family: 'Boogaloo', cursive;
+        background-color: blueviolet;
+    }
+
+
+}
+
+@media (max-width: 700px){
+
+    .main{
+        z-index: 3;
+        background-color: blueviolet;
+        text-align: center;
+        font-size: 20px;
+        animation-name: mainanimation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: fixed;
+        top: 400px;
+        width: 100%;
+    }
+
+    #h1{
+        text-align: center;
+        font-size: 60px;
+        font-family: Algerian;
+        margin-top: 100px;
+        animation-name: heading;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        color: goldenrod;
+    }
+}
+
+@media (max-width: 500px) {
+    .clpara{
+        font-size: 25px;
+    }
+
+    .noemp{
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Boogaloo', cursive;
+        color: gold;
+    }
+    #h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: Algerian;
+        margin-top: 100px;
+        animation-name: heading;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        color: goldenrod;
+    }
+
+    .infopara {
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+        font-family: 'Boogaloo', cursive;
+        animation-name: mainpoints1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes mainpoints1 {
+        0%   { color: black;
+
+        }
+        20%  {color: blueviolet;
+
+        }
+        100% {color: blue;
+        }
+    }
+
+    .info {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        background-color: go
+        height: 600px;
+        width: 300px;
+    }
+    .lawimg:hover{
+        transform: scale(1.1);
+    }
+    .clients{
+        background-color: gainsboro;
+        height: 85px;
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+        font-family: 'Oleo Script', cursive;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bolder;
+        border-radius: 25px;
+        animation-name: clientsanimation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes clientsanimation {
+        0%{
+            color: black;
+        }
+        50%{
+            color: purple;
+        }
+        100%{
+            color: mediumblue;
+        }
+    .contact{
+        font-size: 20px;
+
+    }
+}
+
+
+
+
+}
+@media (max-width: 300px) {
+
+    .infopara {
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        animation-name: mainpoints1;
+        animation-duration: 10s;
+        font-family: 'Boogaloo', cursive;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes mainpoints1 {
+        0%   { color: black;
+
+        }
+        20%  {color: blueviolet;
+
+        }
+        100% {color: blue;
+        }
+    }
+
+    .info {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        background-color: go
+        height: 600px;
+        width: 200px;
+    }
+    .contact{
+        font-size: 15px;
+        height: 150px;
+
+    }
+}
